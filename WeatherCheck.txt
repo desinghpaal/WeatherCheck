@@ -1,0 +1,1 @@
+This repository is about the  processes behind Gathering Weather Report based on user's request from Open Weather map(API)
