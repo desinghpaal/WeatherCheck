@@ -48,7 +48,7 @@ if x["cod"] != "404":
   
     # store the value corresponding
     # to the "humidity" key of y
-    current_humidiy = y["humidity"]
+    current_humidity = y["humidity"]
   
     # store the value of "weather"
     # key in variable z
@@ -65,9 +65,19 @@ if x["cod"] != "404":
           "\n atmospheric pressure (in hPa unit) = " +
                     str(current_pressure) +
           "\n humidity (in percentage) = " +
-                    str(current_humidiy) +
+                    str(current_humidity) +
           "\n description = " +
                     str(weather_description))
   
 else:
     print(" City Not Found ")
+
+
+f=open("demo.txt","a+")
+f.write(f"{city_name:-^30}" '\n')
+f.write(f"Temperature: {current_temperature}" '\n')
+f.write(f"Humidity: {current_humidity}" '\n')
+f.write(f"Pressure: {current_pressure}" '\n')
+f.write(f"Weather Report: {weather_description}")
+f.read()
+f.close()
