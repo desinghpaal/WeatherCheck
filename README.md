@@ -1,1 +1,1 @@
-# Weather Motoring using openweather.org using API in Python
+# Weather Motoring using API in Python
